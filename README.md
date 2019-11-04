@@ -1,6 +1,15 @@
+
 # inclusive
 
 Provides **range** and **slice** with inclusive right boundary.
+
+## Installation
+ 
+```
+pip install inclusive
+```
+
+## Usage
 
 Examples for **range**:
 
@@ -31,3 +40,5 @@ list(range(100)[slice[2, 7]]) == [2, 3, 4, 5, 6, 7]
 list(range(100)[slice(2, 11, 3)]) == [2, 5, 8]
 list(range(100)[slice[2, 11, 3]]) == [2, 5, 8, 11]
 ```
+
+Note that `range[5]` and `slice[5]` start from 1.
